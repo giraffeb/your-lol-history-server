@@ -1,0 +1,24 @@
+{
+  "name": "your-lol-history-server",
+  "version": "1.0.0",
+  "description": "간단한 롤 전적조회 api를 제공합니다.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/giraffeb/your-lol-history-server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/giraffeb/your-lol-history-server/issues"
+  },
+  "homepage": "https://github.com/giraffeb/your-lol-history-server#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.13.5"
+  }
+}
