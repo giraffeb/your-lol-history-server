@@ -1,11 +1,13 @@
 const router = require("express").Router();
 
+const matchService = require("../service/match");
 
-router.get("/", async (req, res)=>{
+router.get("/:summonerName", async (req, res)=>{
   
-  res.json({
-    msg: "response clear"
-  })
+  
+  const result = await matchService.getMatchList(summonerName);
+
+  res.send(result);
 });
 
 module.exports = router;

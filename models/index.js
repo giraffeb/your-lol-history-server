@@ -3,11 +3,11 @@ const mongoose = require("mongoose");
 //TODO: dotenv 설정하기
 async function init(){
   const {
-    db_host
+    DB_HOST
   } = process.env;
-  console.log("DB_HOST: ",db_host);
+  console.log("DB_HOST: ",DB_HOST);
 
-  return mongoose.connect(db_host, {
+  return mongoose.connect(DB_HOST, {
     useNewUrlParser: true,
     useCreateIndex: true
   })
